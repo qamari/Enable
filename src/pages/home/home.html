@@ -4,13 +4,11 @@
   </ion-navbar>
 </ion-header>
 
-<ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
-
 <ion-content padding>
 
 
 
-<button ion-button>Default</button>
+<button ion-button (click)="goToOtherPage()">NAVIGATE ME!</button>
 <button ion-button>Default</button>
 <button ion-button>Default</button>
 <button ion-button>Default</button>
@@ -23,9 +21,9 @@
   </ion-card-header>
 
   <ion-list>
-    <button ion-item>
+    <button ion-item (click)="goToOtherPage()">
       <ion-icon name="cart" item-right></ion-icon>
-      Shopping
+      Another Nav Button
     </button>
 
     <button ion-item>
