@@ -11,7 +11,60 @@
     <ion-list-header>Reviews</ion-list-header>
     <ion-item>
       <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
+      Add Review
     </ion-item>
   </ion-list>
 </ion-content>
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-searchbar (input)="getItems($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-card>
+  <ion-card-header>
+    Explore Nearby
+  </ion-card-header>
+
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="cart" item-left></ion-icon>
+      Ohio Union
+    </button>
+
+    <button ion-item>
+      <ion-icon name="medical" item-left></ion-icon>
+      Thompson Library
+    </button>
+
+    <button ion-item>
+      <ion-icon name="cafe" item-left></ion-icon>
+      Dreese Labs
+    </button>
+
+    <button ion-item>
+      <ion-icon name="paw" item-left></ion-icon>
+      18th Avenue Library
+    </button>
+
+    <button ion-item>
+      <ion-icon name="beer" item-left></ion-icon>
+      Caldwell Labs
+    </button>
+
+    <button ion-item>
+      <ion-icon name="planet" item-left></ion-icon>
+      Jesse Owens North
+    </button>
+
+  </ion-list>
+</ion-card>
