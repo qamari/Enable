@@ -12,30 +12,21 @@
       Add Review
     </ion-item>
   </ion-list>
-</ion-content>
-
+<!-- 
 <ion-header>
   <ion-toolbar color="primary">
     <ion-searchbar (input)="getItems($event)"></ion-searchbar>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content>
+  <button ion-button (click)="getObjects()">Refresh Buildings</button>
   <ion-list>
-    <ion-item *ngFor="let item of items">
-      {{ item }}
+  <ion-card>
+    <ion-item collection-repeat="item in listOfThings">
+      {{item}}
     </ion-item>
+  </ion-card>
   </ion-list>
+
 </ion-content>
-
-<ion-card>
-
-
-
-<ion-content>
-  <ion-item collection-repeat="item in items">
-    {{item}}
-  </ion-item>
-</ion-content>
-
-</ion-card>
