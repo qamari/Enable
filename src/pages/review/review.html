@@ -25,10 +25,11 @@
 <ion-content>
   <button ion-button (click)="refreshBuildings()">Refresh Buildings</button>
   <ion-list>
-  <ion-card>
-    <ion-item *ngFor="let item of listOfThings">
-      {{item}}
-    </ion-item>
-  </ion-card>
+    <ion-card *ngFor="let item of listOfThings" class='card-background-page'>
+      <img src="{{item.imageURL}}"/>
+      <div class="card-title">{{item.name}}</div>
+      <div class="card-subtitle">★{{item.avgRating}}</div>
+      <div class="card-total-ratings">{{item.totalRatings}} Ratings</div>
+    </ion-card>
   </ion-list>
 </ion-content>

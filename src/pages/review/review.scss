@@ -1,3 +1,41 @@
 page-review {
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
 
+  .card-md {
+  	background: black;
+    max-width: 450px;
+    display: inline-block;
+  }
+
+  img {
+  	opacity: 0.5;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 3vmax;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 2vmax;
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    color: #fff;
+  }
+
+  .card-total-ratings {
+    font-size: 2vmax;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    color: #fff;
+  }
 }

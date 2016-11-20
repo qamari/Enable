@@ -21,7 +21,14 @@ export class ReviewPage {
 		query.find().then(function(results) {
 			me.listOfThings = [];
 			results.forEach(function(item) {
-				me.listOfThings.push(item.get("Name"));
+				// mapping Parse objects to our custom objects
+				let newItem = {
+					"name" : item.get("Name"),
+					"avgRating" : item.get("AverageRating"),
+					"totalRatings" : item.get("TotalRatings"),
+					"imageURL" : item.get("ImageURL")
+				};
+				me.listOfThings.push(newItem);
 			});
 		}, function(error) {
 			alert("There was an error: " + error + JSON.stringify(error));
