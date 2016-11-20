@@ -11,14 +11,90 @@
 
 
 
+<!-- <button ion-button>Default</button>
 <button ion-button>Default</button>
 <button ion-button>Default</button>
 <button ion-button>Default</button>
 <button ion-button>Default</button>
-<button ion-button>Default</button>
-<button ion-button>Blue thing</button>
+<button ion-button>Blue thing</button> -->
 
-<ion-card>
+<h1>Welcome to Enable!</h1>
+
+<h4>Address</h4>
+
+<p>
+    Please enter the address of your current location. 
+  </p>
+
+<ion-list>
+
+  <ion-item>
+    <ion-label>Country</ion-label>
+    <ion-select [(ngModel)]="country">
+    //this part will not be hard coded in the future.
+      <ion-option value="afghan">Afghanistan</ion-option>
+      <ion-option value="alban">Albania</ion-option>
+      <ion-option value="other">Other</ion-option>
+    </ion-select>
+  </ion-item>
+
+<ion-item>
+    <ion-label>State</ion-label>
+    <ion-select [(ngModel)]="state">
+      <ion-option value="alab">Alabama</ion-option>
+      <ion-option value="alas">Alaska</ion-option>
+      <ion-option value="ohio">Ohio</ion-option>
+      <ion-option value="other">Other</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>City</ion-label>
+    <ion-select [(ngModel)]="city">
+      <ion-option value="colum">Columbus</ion-option>
+      <ion-option value="other">Other</ion-option>
+    </ion-select>
+  </ion-item>
+
+<ion-item>
+    <ion-label>Street</ion-label>
+    <ion-select [(ngModel)]="street">
+      <ion-option value="wlane">West Lane Avenue</ion-option>
+      <ion-option value="other">Other</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Building</ion-label>
+    <ion-select [(ngModel)]="building">
+      <ion-option value="hhouse">Houston House</ion-option>
+      <ion-option value="ttower">Taylor Tower</ion-option>
+      <ion-option value="other">Other</ion-option>
+    </ion-select>
+  </ion-item>
+
+</ion-list>
+
+<button ion-item>
+      <ion-icon name="cart" item-right></ion-icon>
+      Shopping
+    </button>
+    
+<!-- Center content -->
+<!-- <ion-side-menu-content>
+  <ion-header-bar class="bar-dark">
+    <h1 class="title">Todo</h1>
+  </ion-header-bar>
+  <ion-content> -->
+    <!-- our list and list items -->
+    <!-- <ion-list>
+      <ion-item ng-repeat="task in tasks">
+        {{task.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-side-menu-content> -->
+<!-- <ion-card>
   <ion-card-header>
     Explore Nearby
   </ion-card-header>
@@ -56,8 +132,8 @@
 
   </ion-list>
 </ion-card>
-
-  <h2>Welcome to Ionic!</h2>
+ -->
+<!--   <h2>Welcome to Ionic!</h2>
   <p>
     This starter project comes with simple tabs-based layout for apps
     that are going to primarily use a Tabbed UI.
@@ -65,5 +141,5 @@
   <p>
     Take a look at the <code>src/pages/</code> directory to add or change tabs,
     update any existing page or create new pages.
-  </p>
+  </p> -->
 </ion-content>
