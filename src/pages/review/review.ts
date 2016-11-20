@@ -34,4 +34,8 @@ export class ReviewPage {
 			alert("There was an error: " + error + JSON.stringify(error));
 		});
 	}	
+
+	textChanged(event) {
+		
+	}
 }

@@ -5,7 +5,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+<!-- <ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav> -->
 
 <ion-content padding>
 
@@ -30,8 +30,8 @@
 
   <ion-item>
     <ion-label>Country</ion-label>
-    <ion-select [(ngModel)]="country">
-    //this part will not be hard coded in the future.
+    <ion-select><!--  [(ngModel)]="country"> -->
+    <!-- //this part will not be hard coded in the future. -->
       <ion-option value="afghan">Afghanistan</ion-option>
       <ion-option value="alban">Albania</ion-option>
       <ion-option value="other">Other</ion-option>
@@ -40,7 +40,7 @@
 
 <ion-item>
     <ion-label>State</ion-label>
-    <ion-select [(ngModel)]="state">
+    <ion-select><!--  [(ngModel)]="state"> -->
       <ion-option value="alab">Alabama</ion-option>
       <ion-option value="alas">Alaska</ion-option>
       <ion-option value="ohio">Ohio</ion-option>
@@ -50,7 +50,7 @@
 
   <ion-item>
     <ion-label>City</ion-label>
-    <ion-select [(ngModel)]="city">
+    <ion-select><!--  [(ngModel)]="city"> -->
       <ion-option value="colum">Columbus</ion-option>
       <ion-option value="other">Other</ion-option>
     </ion-select>
@@ -58,7 +58,7 @@
 
 <ion-item>
     <ion-label>Street</ion-label>
-    <ion-select [(ngModel)]="street">
+    <ion-select><!--  [(ngModel)]="street"> -->
       <ion-option value="wlane">West Lane Avenue</ion-option>
       <ion-option value="other">Other</ion-option>
     </ion-select>
@@ -66,7 +66,7 @@
 
   <ion-item>
     <ion-label>Building</ion-label>
-    <ion-select [(ngModel)]="building">
+    <ion-select><!--  [(ngModel)]="building"> -->
       <ion-option value="hhouse">Houston House</ion-option>
       <ion-option value="ttower">Taylor Tower</ion-option>
       <ion-option value="other">Other</ion-option>

@@ -1,26 +1,8 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Review
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-header>
   <ion-toolbar color="primary">
     <ion-searchbar (input)="textChanged($event)"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
-
-<ion-content>
-  <ion-list>
-    <ion-list-header>Reviews</ion-list-header>
-    <ion-item>
-      <ion-icon name="book" item-left></ion-icon>
-      Add Review
-    </ion-item>
-  </ion-list>
-</ion-content>
 
 <ion-content>
   <button ion-button (click)="refreshBuildings()">Refresh Buildings</button>
