@@ -23,10 +23,10 @@
 </ion-content>
 
 <ion-content>
-  <button ion-button (click)="getObjects()">Refresh Buildings</button>
+  <button ion-button (click)="refreshBuildings()">Refresh Buildings</button>
   <ion-list>
   <ion-card>
-    <ion-item collection-repeat="item in listOfThings">
+    <ion-item *ngFor="let item of listOfThings">
       {{item}}
     </ion-item>
   </ion-card>
